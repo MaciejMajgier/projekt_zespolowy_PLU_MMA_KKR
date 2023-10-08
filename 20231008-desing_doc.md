@@ -5,11 +5,11 @@ Created at: 11:00
 
 ## Intro
 
-*Why/Problem*
+Nasze zagadnienie skupia sie na znalezieniu efektywnego i taniego rozwiazania dla glebokiej analizy danych z roznych zrodel.
 
-*How*
+Stworzymy instancje Azure Data Factory ktora bedzie pobierala dane ze srodowiska ERP, nastepnie dane beda procesowane, korzystjac z faktu ze znamy struktury bazy i tabel, a nastepenie dane beda exportowane w postaci kostek (MultiDimensional Data Model) ktorymi pozniej bedzie mozna manipulwoac (miary i wymiary).
 
-*What*
+dzieki temu otrzymamy dokladna anlize danych ktora moze posluzyc do szukania wzorcow, trendow i prognoz.
 
 ...
 
