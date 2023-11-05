@@ -1,7 +1,7 @@
 Pojekt strony Wrocławskich skupach złomu
 
 Author: Przemek Luczański, Maciek Majgier, Kornel Krzak
-Created at: 11:00
+Created at: 11:00 11.2023
 
 ## Intro
 
