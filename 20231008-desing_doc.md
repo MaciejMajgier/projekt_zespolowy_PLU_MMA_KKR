@@ -1,38 +1,33 @@
-Azure data factory z wykorzystaniem Terraform
+Pojekt strony Wrocławskich skupach złomu
 
 Author: Przemek Luczański, Maciek Majgier, Kornel Krzak
 Created at: 11:00
 
 ## Intro
 
-Nasze zagadnienie skupia sie na znalezieniu efektywnego i taniego rozwiazania dla glebokiej analizy danych z roznych zrodel.
+Nasze zagadnienie skupia sie na zebraniu najważniejszych informacji na temat wszystkich skupów na terenie Wrocławia.
+Stworzymy stronę, która powinna mieć przejrzysty layout z szybkim dostepem do wszystkich informacji potrzebnych do znalezienia odpowiedniego skupu.
+Informację które chcemy umieścić na stronie to:
+- telefon
+- adres
+- lokalizacja
+- najlepiej oceniane
+- strona skupu
 
-Stworzymy instancje Azure Data Factory ktora bedzie pobierala dane ze srodowiska ERP, nastepnie dane beda procesowane, korzystjac z faktu ze znamy struktury bazy i tabel, a nastepenie dane beda exportowane w postaci kostek (MultiDimensional Data Model) ktorymi pozniej bedzie mozna manipulwoac (miary i wymiary).
-
-dzieki temu otrzymamy dokladna anlize danych ktora moze posluzyc do szukania wzorcow, trendow i prognoz.
-
-...
-
-## Goals and Non-Goals
-
-...
 
 ## Proposed solution
 
-Starting with high-level design, arch diagrams, screenshots, mockups,... 
+html, css, flask
 
-...
-
-You might here also touch things, such as testing.
 
 ## Other options
 
-Discarded alternatives.
+Zrobić stronę która bedzie responsywna.
 
-...
 
 ## Open Questions
 
-...
+Jak wyświetlać na stronie raport z cennikiem materiałów
+
 
 ## References
