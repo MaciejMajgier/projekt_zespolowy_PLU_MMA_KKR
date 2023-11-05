@@ -1,0 +1,33 @@
+.scroll-fix::before {
+  content: ' ';
+  display: block;
+  height: 71px;
+  margin-top: -71px;
+}
+
+.navbar-brand span {
+  font-size: 30px;
+}
+
+header .hero-text h3 {
+  font-size: 40px;
+}
+
+header .hero-text p {
+  font-size: 25px;
+}
+
+#map .informacje p {
+  font-size: 15px;
+}
+
+#map .informacje .cargoImg {
+  width: auto;
+  height: auto;
+}
+
+#map .mapa iframe {
+  width: 100vw;
+  height: 300px;
+}
+/*# sourceMappingURL=medium.css.map */

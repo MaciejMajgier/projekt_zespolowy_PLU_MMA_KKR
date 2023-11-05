@@ -1,0 +1,316 @@
+*, *::after, ::before
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+
+
+html
+    scroll-behavior: smooth
+
+body
+    position: relative
+    font-family: 'Montserrat', sans-serif
+    background-color: rgb(250, 249, 244)
+
+.scroll-fix::before
+    content: ' '
+    display: block
+    height: 62px
+    margin-top: -62px
+
+.under-line
+    width: 80px
+    height: 4px
+    background-color: tomato
+
+.under-line-offert
+            position: absolute
+            left: 50%
+            transform: translate(-50%)
+            width: 160px
+            height: 4px
+            background-color: tomato
+
+.wrapper
+    max-width: 2560px
+    width: 80%
+    margin: 0 auto
+
+
+.jumbotron
+    margin: 0
+
+.visibility
+    visibility: hidden
+
+// nawigacja
+nav
+    text-transform: uppercase
+    transition: background-color .3s
+
+    .navbar
+        padding: 0
+
+    a, i
+        color: white
+
+    a:hover
+        color: gold
+
+    .languageIcon
+
+        img
+            margin: 5px
+            width: 20px
+            height: 20px
+
+@media (max-height: 750px)
+    nav
+        background-color: rgba(0, 0, 0, .8)
+
+span
+    font-size: 25px
+
+
+.shadow-bg
+    background-color: rgba(0, 0, 0, .6)
+    transition: .6s
+
+.active
+    color: gold
+
+.hero-shadow
+    position: absolute
+    background-color: rgba(0, 0, 0, .3)
+    width: 100%
+    height: 100%
+
+// header
+header
+
+    .hero-image
+        position: relative
+        height: 100vh
+        background-image: url(../img/header.jpg)
+        background-size: cover
+        background-position: center
+        background-attachment: fixed
+        z-index: 1
+
+    .hero-text
+        display: flex
+        text-align: center
+        justify-content: center
+        align-items: center
+        flex-direction: column
+        height: 100%
+        padding: 10px
+        z-index: 2
+
+        p
+            padding: 0 30px
+            font-size: 20px
+            z-index: 2
+
+        span
+            font-size: 1.17em
+            font-weight: bold    
+
+    .fa-chevron-down
+        display: none
+
+
+// aboutus
+.about-text
+
+    p.title
+        padding-top: 15px
+
+
+// offert
+#offert
+
+    .jumbotron
+        position: relative
+        padding: 0
+        // height: 80vh
+        background-image: url('../img/Photo by Goh Rhy Yan on Unsplash.jpg')
+        background-position: center
+        background-size: cover
+        z-index: 0
+
+    h1
+        text-align: center
+        padding-top: 20px
+        font-size: 28px
+
+
+
+    .hero-shadow-offert
+        position: absolute
+        background-color: rgba(0, 0, 0, .6)
+        width: 100%
+        height: 100%
+
+    .about-hero-item
+        margin: 0 auto
+        margin-top: 45px
+
+
+    .row
+        margin: auto
+
+    .fas
+        font-size: 30px
+
+    // .col-md-3
+    //     height: 180px
+    //     width: 250px
+
+    p
+        font-size: 18px
+            // font-weight: bold
+        color: #fac720
+
+        i
+            color: #fff
+
+
+//formularze
+#formularze
+
+    a
+        padding-top: 30px
+
+
+#podopieczni
+    .jumbotron
+        position: relative
+        background-color: #ddd
+
+        a
+
+            img
+                // padding-left: 6px
+                border: 5px solid white
+                // padding-top: 25px
+                margin-top: 25px
+                display: block
+                margin-left: auto
+                margin-right: auto
+                width: 250px
+                height: 166.5px
+
+
+        h2
+            text-align: center
+
+
+
+
+#team
+    .jumbotron
+        position: relative
+        background-image: url('../img/skrzydlo.jpg')
+        background-attachment: fixed
+        background-size: cover
+        z-index: 0
+
+        h2
+            color: white
+            text-align: center
+
+
+
+    .team-shadow
+        position: absolute
+        top: 0
+        width: 100%
+        height: 100%
+        background-color: rgba(0, 0, 0, 0.6)
+        z-index: -10
+
+    .card
+        transition: .3s
+
+        .fa-users
+            padding-top: 10px
+            text-align: center
+            font-size: 55px
+
+        p
+            text-align: center
+            padding-top: 10px
+            font-size: 15px
+            font-weight: bold
+
+
+        .row
+            margin-left: 0
+            margin-right: 0
+
+    .card:hover
+        transform: scale(.98)
+
+    .card-deck
+        margin-top: 25px
+
+    .card-body
+        height: 200px
+        width: auto
+
+        .card-title
+            text-transform: uppercase
+            font-weight: bold
+            text-align: center
+
+        .card-text
+            font-size: 14px
+
+    .biuro
+        text-align: center
+        color: #ddd
+        font-weight: bold
+
+
+        p
+            margin: 0
+            margin-top: 20px
+
+            a
+                color: #ddd
+
+
+        h5
+            text-transform: uppercase
+            font-weight: bold
+            margin-top: 35px
+
+        a:hover
+            color: royalblue
+
+#kontakt
+
+
+    .informacje
+        margin-top: 40px
+
+        .cargoImg
+            img
+                width: 260px
+                height: 180px
+
+
+    .mapa
+        iframe
+            width: 100vw
+            height: 150px
+
+footer
+    color: gray
+
+    p
+        font-size: 12px
+        margin-bottom: 0
+        padding: 5px
+        text-align: center

@@ -1,0 +1,320 @@
+*, *::after, ::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #faf9f4;
+}
+
+.scroll-fix::before {
+  content: ' ';
+  display: block;
+  height: 62px;
+  margin-top: -62px;
+}
+
+.under-line {
+  width: 80px;
+  height: 4px;
+  background-color: tomato;
+}
+
+.under-line-offert {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  width: 160px;
+  height: 4px;
+  background-color: tomato;
+}
+
+.wrapper {
+  max-width: 2560px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.jumbotron {
+  margin: 0;
+}
+
+.visibility {
+  visibility: hidden;
+}
+
+nav {
+  text-transform: uppercase;
+  -webkit-transition: background-color .3s;
+  transition: background-color .3s;
+}
+
+nav .navbar {
+  padding: 0;
+}
+
+nav a, nav i {
+  color: white;
+}
+
+nav a:hover {
+  color: gold;
+}
+
+nav .languageIcon img {
+  margin: 5px;
+  width: 20px;
+  height: 20px;
+}
+
+@media (max-height: 750px) {
+  nav {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+}
+
+span {
+  font-size: 25px;
+}
+
+.shadow-bg {
+  background-color: rgba(0, 0, 0, 0.6);
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
+.active {
+  color: gold;
+}
+
+.hero-shadow {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 100%;
+}
+
+header .hero-image {
+  position: relative;
+  height: 100vh;
+  background-image: url(../img/garbage_Header.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  z-index: 1;
+}
+
+header .hero-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  padding: 10px;
+  z-index: 1;
+}
+
+header .hero-text p {
+  padding: 0 30px;
+  font-size: 20px;
+  z-index: 1;
+}
+
+header .hero-text span {
+  font-size: 1.17em;
+  font-weight: bold;
+}
+
+header .fa-chevron-down {
+  display: none;
+}
+
+.about-text p.title {
+  padding-top: 15px;
+}
+
+#offert .jumbotron {
+  position: relative;
+  padding: 0;
+  background-image: url("../img/Photo by Goh Rhy Yan on Unsplash.jpg");
+  background-position: center;
+  background-size: cover;
+  z-index: 0;
+}
+
+#offert h1 {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 28px;
+}
+
+#offert .hero-shadow-offert {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+}
+
+#offert .about-hero-item {
+  margin: 0 auto;
+  margin-top: 45px;
+}
+
+#offert .row {
+  margin: auto;
+}
+
+#offert .fas {
+  font-size: 30px;
+}
+
+#offert p {
+  font-size: 18px;
+  color: #fac720;
+}
+
+#offert p i {
+  color: #fff;
+}
+
+#formularze a {
+  padding-top: 30px;
+}
+
+#galery .jumbotron {
+  position: relative;
+  background-color: #ddd;
+}
+
+#galery .jumbotron a img {
+  border: 5px solid white;
+  margin-top: 25px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 250px;
+  height: 166.5px;
+}
+
+#galery .jumbotron h2 {
+  text-align: center;
+}
+
+#best .jumbotron {
+  position: relative;
+  background-image: url("../img/skrzydlo.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  z-index: 0;
+}
+
+#best .jumbotron h2 {
+  color: white;
+  text-align: center;
+}
+
+#best .best-shadow {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: -10;
+}
+
+#best .card {
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+#best .card .fa-users {
+  padding-top: 10px;
+  text-align: center;
+  font-size: 55px;
+}
+
+#best .card p {
+  text-align: center;
+  padding-top: 10px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+#best .card .row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+#best .card:hover {
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
+}
+
+#best .card-deck {
+  margin-top: 25px;
+}
+
+#best .card-body {
+  height: 200px;
+  width: auto;
+}
+
+#best .card-body .card-title {
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+}
+
+#best .card-body .card-text {
+  font-size: 14px;
+}
+
+#map h2 {
+  color: black;
+  text-align: center;
+}
+
+#map .informacje {
+  margin-top: 40px;
+}
+
+#map .informacje .cargoImg img {
+  width: 260px;
+  height: 180px;
+}
+
+#map .mapa iframe {
+  width: 100vw;
+  height: 150px;
+}
+
+footer {
+  color: gray;
+}
+
+footer p {
+  font-size: 12px;
+  margin-bottom: 0;
+  padding: 5px;
+  text-align: center;
+}
+/*# sourceMappingURL=main.css.map */

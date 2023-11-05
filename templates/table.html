@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cennik</title>
+</head>
+<body>
+    <div id="flask-content">
+        <h1>Cennik materiałów</h1>
+        <table>
+            {% for item in data %}
+            <tr>
+                <td>{{ item.material }}</td>
+                <td>{{ item.cena }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+</body>
+</html>
